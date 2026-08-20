@@ -30,9 +30,10 @@ export default async function AdminLoginPage({ searchParams }: Props) {
       </p>
 
       {erro && (
-        <p className="mt-4 rounded-lg bg-danger-100 px-3.5 py-2.5 text-sm text-danger-500">
-          Não foi possível entrar. Verifique suas credenciais.
-        </p>
+        <div className="mt-4 rounded-lg bg-danger-100 px-3.5 py-2.5 text-sm text-danger-500">
+          <p>Não foi possível entrar. Verifique suas credenciais.</p>
+          <p className="mt-1 text-xs opacity-80">{erro}</p>
+        </div>
       )}
 
       <form action={signInAction} className="mt-6 space-y-4">
