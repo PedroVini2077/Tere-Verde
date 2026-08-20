@@ -22,8 +22,6 @@ export async function signInAction(formData: FormData) {
   redirect("/admin/dashboard");
 }
 
-// ---------- Novidades ----------
-
 export async function createNovidadeAction(formData: FormData) {
   const supabase = await createClient();
   const {
@@ -45,8 +43,6 @@ export async function deleteNovidadeAction(id: string) {
   revalidatePath("/admin/dashboard");
   revalidatePath("/");
 }
-
-// ---------- Trilhas ----------
 
 export async function upsertTrilhaAction(formData: FormData) {
   const supabase = await createClient();
@@ -88,8 +84,6 @@ export async function deleteTrilhaAction(id: string) {
   revalidatePath("/trilhas");
 }
 
-// ---------- Cachoeiras ----------
-
 export async function upsertCachoeiraAction(formData: FormData) {
   const supabase = await createClient();
   const id = String(formData.get("id") ?? "");
@@ -122,8 +116,6 @@ export async function deleteCachoeiraAction(id: string) {
   revalidatePath("/admin/cachoeiras");
   revalidatePath("/cachoeiras");
 }
-
-// ---------- Eventos ----------
 
 export async function upsertEventoAction(formData: FormData) {
   const supabase = await createClient();

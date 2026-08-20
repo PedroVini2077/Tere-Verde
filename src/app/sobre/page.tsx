@@ -32,14 +32,14 @@ export default function SobrePage() {
             O Circuito Terê Verde
           </h2>
           <p className="mt-3 text-foreground/70">
-            A área urbana de Teresópolis é cercada por três unidades de
-            conservação — o Parque Nacional da Serra dos Órgãos, o Parque
-            Estadual dos Três Picos e o Parque Natural Municipal Montanhas de
-            Teresópolis — que sustentam o ecoturismo da região e limitam a
-            expansão urbana. O Terê Verde Online reúne, em um único lugar,
-            informações atualizadas sobre trilhas, cachoeiras, biodiversidade
-            e eventos dessas áreas protegidas, promovendo o acesso consciente
-            às belezas naturais do município.
+            A área urbana de Teresópolis fica cercada por três unidades de
+            conservação: o Parque Nacional da Serra dos Órgãos, o Parque
+            Estadual dos Três Picos e o Parque Natural Municipal Montanhas
+            de Teresópolis. São elas que sustentam o ecoturismo da região,
+            mas também limitam o crescimento da cidade. O Terê Verde Online
+            junta num só lugar as informações sobre trilhas, cachoeiras,
+            biodiversidade e eventos dessas três áreas, pra facilitar a
+            visita.
           </p>
         </section>
 

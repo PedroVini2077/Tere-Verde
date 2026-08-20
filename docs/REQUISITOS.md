@@ -4,10 +4,10 @@ Situação-problema: **Circuito Terê Verde** (MVP Mobile Development).
 
 ## Atores
 
-- **Visitante** — qualquer pessoa que acesse o site, sem necessidade de
-  cadastro, em busca de informações sobre trilhas, cachoeiras,
+- **Visitante**: qualquer pessoa que acesse o site sem precisar de
+  cadastro, buscando informações sobre trilhas, cachoeiras,
   biodiversidade e eventos das unidades de conservação de Teresópolis.
-- **Administrador** — usuário autenticado responsável por manter o
+- **Administrador**: usuário autenticado responsável por manter o
   conteúdo do site atualizado.
 
 ## Requisitos Funcionais
@@ -44,19 +44,19 @@ Situação-problema: **Circuito Terê Verde** (MVP Mobile Development).
 
 ## Fora do Escopo
 
-- Cadastro público de visitantes ou perfis de usuário — apenas
-  administradores se autenticam.
+- Cadastro público de visitantes ou perfis de usuário. Só o
+  administrador se autentica.
 - Sistema de reservas, ingressos ou pagamento online.
 - Mapas interativos, geolocalização em tempo real ou rastreamento GPS
   durante a trilha.
-- Banco de imagens reais dos parques — o MVP usa ilustrações vetoriais
-  como identidade visual, já que não há acervo fotográfico oficial
+- Banco de imagens reais dos parques. O MVP usa ilustrações vetoriais
+  como identidade visual porque não há acervo fotográfico oficial
   disponível para uso.
-- Aplicativo nativo publicado em lojas (App Store / Google Play); a
-  solução adotada é um site responsivo instalável (PWA).
+- Aplicativo nativo publicado em loja (App Store, Google Play). A
+  solução adotada é um site responsivo instalável como PWA.
 - Notificações push.
-- Múltiplos níveis de permissão administrativa — existe apenas o papel
-  único de "administrador".
+- Múltiplos níveis de permissão administrativa. Existe apenas o papel
+  único de administrador.
 - Avaliações, comentários ou fóruns de visitantes.
 - Integração com previsão do tempo em tempo real.
-- Suporte a múltiplos idiomas (o conteúdo é apenas em português).
+- Suporte a múltiplos idiomas. O conteúdo é apenas em português.

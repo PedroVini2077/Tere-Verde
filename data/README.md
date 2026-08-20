@@ -1,14 +1,14 @@
 # Dados
 
 Este diretório documenta a origem dos dados usados pelo Terê Verde Online.
-Os dados vivem no banco Postgres do Supabase (não em arquivos estáticos no
-repositório); os arquivos aqui servem como referência versionada e permitem
-recriar o banco do zero em outro projeto Supabase.
+Os dados ficam no banco Postgres do Supabase, não em arquivos estáticos
+no repositório. Os arquivos aqui servem como referência versionada e
+permitem recriar o banco do zero em outro projeto Supabase.
 
-- `schema.sql` — schema completo (tabelas, triggers e políticas de RLS).
-- `seed.sql` — dados iniciais de demonstração: as 3 unidades de
-  conservação de Teresópolis, trilhas, cachoeiras, espécies de fauna/flora
-  e eventos/temporadas.
+- `schema.sql`: schema completo, com tabelas, triggers e políticas de RLS.
+- `seed.sql`: dados iniciais de demonstração, com as 3 unidades de
+  conservação de Teresópolis, trilhas, cachoeiras, espécies de fauna e
+  flora, e eventos e temporadas.
 
 ## Como recriar em um novo projeto Supabase
 
