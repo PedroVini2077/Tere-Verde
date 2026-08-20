@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="mx-auto flex max-w-md flex-col items-center px-5 py-24 text-center">
       <Icon name="mapPin" size={40} className="text-forest-400" />
-      <h1 className="font-display mt-4 text-2xl font-semibold text-forest-900">
+      <h1 className="font-display mt-4 text-2xl font-semibold text-heading">
         Trilha não encontrada
       </h1>
       <p className="mt-2 text-foreground/65">

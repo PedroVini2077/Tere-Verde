@@ -15,7 +15,7 @@ export default async function AdminTrilhasPage() {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <h1 className="font-display text-2xl font-semibold text-forest-900">Trilhas</h1>
+        <h1 className="font-display text-2xl font-semibold text-heading">Trilhas</h1>
         <Link
           href="/admin/trilhas/novo"
           className="flex items-center gap-1.5 rounded-full bg-forest-700 px-4 py-2 text-sm font-semibold text-white hover:bg-forest-800"
@@ -34,7 +34,7 @@ export default async function AdminTrilhasPage() {
             className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-surface p-4"
           >
             <div>
-              <p className="font-medium text-forest-900">{trilha.nome}</p>
+              <p className="font-medium text-heading">{trilha.nome}</p>
               <div className="mt-1 flex flex-wrap items-center gap-2">
                 <DificuldadeBadge value={trilha.dificuldade} />
                 <StatusAtracaoBadge value={trilha.status} />
@@ -43,7 +43,7 @@ export default async function AdminTrilhasPage() {
             <div className="flex items-center gap-1">
               <Link
                 href={`/admin/trilhas/${trilha.id}`}
-                className="rounded-lg p-2 text-foreground/50 hover:bg-forest-50 hover:text-forest-700"
+                className="rounded-lg p-2 text-foreground/50 hover:bg-tint hover:text-accent-strong"
                 aria-label="Editar"
               >
                 <Icon name="edit" size={16} />

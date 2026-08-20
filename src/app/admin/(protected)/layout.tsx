@@ -14,7 +14,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl flex-col gap-6 px-4 py-6 md:flex-row md:px-6 md:py-8">
       <aside className="md:w-56 md:shrink-0">
         <div className="flex items-center justify-between px-1">
-          <p className="text-xs font-medium uppercase tracking-wide text-forest-500">
+          <p className="text-xs font-medium uppercase tracking-wide text-accent">
             Painel administrativo
           </p>
           <form action={signOutAction} className="md:hidden">
@@ -32,7 +32,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <Link
               key={link.href}
               href={link.href}
-              className="flex shrink-0 items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-sm font-medium text-foreground/70 transition-colors hover:bg-forest-50 hover:text-forest-700"
+              className="flex shrink-0 items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-sm font-medium text-foreground/70 transition-colors hover:bg-tint hover:text-accent-strong"
             >
               <Icon name={link.icon} size={17} />
               {link.label}

@@ -22,7 +22,7 @@ export default async function EditarEventoPage({ params }: Props) {
 
   return (
     <div>
-      <h1 className="font-display text-2xl font-semibold text-forest-900">Editar evento</h1>
+      <h1 className="font-display text-2xl font-semibold text-heading">Editar evento</h1>
       <div className="mt-6 max-w-2xl">
         <EventoForm evento={evento as Evento} unidades={unidades} />
       </div>

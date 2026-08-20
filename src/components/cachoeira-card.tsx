@@ -15,11 +15,11 @@ export function CachoeiraCard({ cachoeira }: { cachoeira: Cachoeira }) {
         <div className="flex items-start justify-between gap-2">
           <div>
             {cachoeira.unidades_conservacao && (
-              <p className="text-xs font-medium uppercase tracking-wide text-forest-500">
+              <p className="text-xs font-medium uppercase tracking-wide text-accent">
                 {cachoeira.unidades_conservacao.nome}
               </p>
             )}
-            <h3 className="font-display mt-0.5 text-lg font-semibold text-forest-900 group-hover:text-forest-600">
+            <h3 className="font-display mt-0.5 text-lg font-semibold text-heading group-hover:text-accent-strong">
               {cachoeira.nome}
             </h3>
           </div>

@@ -42,18 +42,18 @@ export default async function TrilhaDetalhePage({ params }: Props) {
       <div className="mx-auto max-w-4xl px-5 py-10 md:px-6">
         <Link
           href="/trilhas"
-          className="inline-flex items-center gap-1 text-sm font-medium text-forest-600 hover:text-forest-700"
+          className="inline-flex items-center gap-1 text-sm font-medium text-accent-strong hover:text-accent-strong"
         >
           <Icon name="chevronRight" size={14} className="rotate-180" /> Todas as trilhas
         </Link>
 
         {trilha.unidades_conservacao && (
-          <p className="mt-4 text-xs font-medium uppercase tracking-wide text-forest-500">
+          <p className="mt-4 text-xs font-medium uppercase tracking-wide text-accent">
             {trilha.unidades_conservacao.nome}
           </p>
         )}
         <div className="mt-1 flex flex-wrap items-center gap-3">
-          <h1 className="font-display text-3xl font-semibold text-forest-900 md:text-4xl">
+          <h1 className="font-display text-3xl font-semibold text-heading md:text-4xl">
             {trilha.nome}
           </h1>
           <DificuldadeBadge value={trilha.dificuldade} />
@@ -68,7 +68,7 @@ export default async function TrilhaDetalhePage({ params }: Props) {
               <dt className="flex items-center gap-1.5 text-xs text-foreground/55">
                 <Icon name={item.icon} size={14} /> {item.label}
               </dt>
-              <dd className="mt-1 font-display text-lg font-semibold text-forest-900">
+              <dd className="mt-1 font-display text-lg font-semibold text-heading">
                 {item.value}
               </dd>
             </div>

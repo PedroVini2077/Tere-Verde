@@ -19,12 +19,12 @@ export default async function AdminLoginPage({ searchParams }: Props) {
           </svg>
         </span>
         <div>
-          <p className="font-display text-lg font-semibold text-forest-900">Terê Verde</p>
+          <p className="font-display text-lg font-semibold text-heading">Terê Verde</p>
           <p className="text-xs text-foreground/55">Área administrativa</p>
         </div>
       </div>
 
-      <h1 className="font-display text-2xl font-semibold text-forest-900">Entrar</h1>
+      <h1 className="font-display text-2xl font-semibold text-heading">Entrar</h1>
       <p className="mt-1 text-sm text-foreground/60">
         Acesso restrito aos administradores do Circuito Terê Verde.
       </p>

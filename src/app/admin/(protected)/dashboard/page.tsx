@@ -27,7 +27,7 @@ export default async function AdminDashboardPage() {
 
   return (
     <div>
-      <h1 className="font-display text-2xl font-semibold text-forest-900">
+      <h1 className="font-display text-2xl font-semibold text-heading">
         Olá, {user?.email?.split("@")[0]}
       </h1>
       <p className="mt-1 text-sm text-foreground/60">
@@ -37,8 +37,8 @@ export default async function AdminDashboardPage() {
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         {stats.map((stat) => (
           <div key={stat.label} className="rounded-2xl border border-border bg-surface p-5">
-            <Icon name={stat.icon} size={18} className="text-forest-500" />
-            <p className="font-display mt-2 text-2xl font-semibold text-forest-900">
+            <Icon name={stat.icon} size={18} className="text-accent" />
+            <p className="font-display mt-2 text-2xl font-semibold text-heading">
               {stat.value}
             </p>
             <p className="text-sm text-foreground/60">{stat.label}</p>
@@ -47,7 +47,7 @@ export default async function AdminDashboardPage() {
       </div>
 
       <div className="mt-8 rounded-2xl border border-border bg-surface p-5">
-        <h2 className="font-display text-lg font-semibold text-forest-900">Publicar novidade</h2>
+        <h2 className="font-display text-lg font-semibold text-heading">Publicar novidade</h2>
         <p className="mt-1 text-sm text-foreground/60">
           Avisos rápidos para os visitantes, exibidos no site.
         </p>
@@ -78,7 +78,7 @@ export default async function AdminDashboardPage() {
             {novidades.map((novidade) => (
               <li key={novidade.id} className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-sm font-medium text-forest-900">{novidade.titulo}</p>
+                  <p className="text-sm font-medium text-heading">{novidade.titulo}</p>
                   <p className="text-sm text-foreground/60">{novidade.conteudo}</p>
                 </div>
                 <form

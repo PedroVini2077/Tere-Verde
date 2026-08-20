@@ -13,7 +13,7 @@ function Badge({
   tone: "green" | "amber" | "red" | "neutral";
 }) {
   const tones: Record<string, string> = {
-    green: "bg-forest-100 text-forest-700",
+    green: "bg-tint text-accent-strong",
     amber: "bg-amber-100 text-clay-600",
     red: "bg-danger-100 text-danger-500",
     neutral: "bg-surface-muted text-foreground/60",

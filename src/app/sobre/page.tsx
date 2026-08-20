@@ -28,7 +28,7 @@ export default function SobrePage() {
 
       <div className="mx-auto max-w-3xl space-y-10 px-5 py-10 md:px-6">
         <section>
-          <h2 className="font-display text-xl font-semibold text-forest-900">
+          <h2 className="font-display text-xl font-semibold text-heading">
             O Circuito Terê Verde
           </h2>
           <p className="mt-3 text-foreground/70">
@@ -44,20 +44,20 @@ export default function SobrePage() {
         </section>
 
         <section>
-          <h2 className="font-display text-xl font-semibold text-forest-900">Atores</h2>
+          <h2 className="font-display text-xl font-semibold text-heading">Atores</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {ATORES.map((ator) => (
               <div key={ator.titulo} className="rounded-2xl border border-border bg-surface p-5">
-                <h3 className="font-medium text-forest-800">{ator.titulo}</h3>
+                <h3 className="font-medium text-heading">{ator.titulo}</h3>
                 <p className="mt-2 text-sm text-foreground/65">{ator.descricao}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="flex items-start gap-3 rounded-2xl border border-forest-100 bg-forest-50 p-5">
-          <Icon name="leaf" size={20} className="mt-0.5 shrink-0 text-forest-600" />
-          <p className="text-sm text-forest-800">
+        <section className="flex items-start gap-3 rounded-2xl border border-tint-border bg-tint p-5">
+          <Icon name="leaf" size={20} className="mt-0.5 shrink-0 text-accent-strong" />
+          <p className="text-sm text-heading">
             Este é um MVP acadêmico desenvolvido para a disciplina de MVP
             Mobile Development, a partir da situação-problema
             &ldquo;Circuito Terê Verde&rdquo;. O conteúdo apresentado tem fins

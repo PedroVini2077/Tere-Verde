@@ -16,11 +16,11 @@ export function TrilhaCard({ trilha }: { trilha: Trilha }) {
         <div className="flex items-start justify-between gap-2">
           <div>
             {trilha.unidades_conservacao && (
-              <p className="text-xs font-medium uppercase tracking-wide text-forest-500">
+              <p className="text-xs font-medium uppercase tracking-wide text-accent">
                 {trilha.unidades_conservacao.nome}
               </p>
             )}
-            <h3 className="font-display mt-0.5 text-lg font-semibold text-forest-900 group-hover:text-forest-600">
+            <h3 className="font-display mt-0.5 text-lg font-semibold text-heading group-hover:text-accent-strong">
               {trilha.nome}
             </h3>
           </div>

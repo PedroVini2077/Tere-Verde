@@ -77,7 +77,7 @@ export default async function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-6">
-        <h2 className="font-display text-2xl font-semibold text-forest-900 md:text-3xl">
+        <h2 className="font-display text-2xl font-semibold text-heading md:text-3xl">
           Unidades de conservação
         </h2>
         <p className="mt-2 max-w-2xl text-foreground/65">
@@ -93,10 +93,10 @@ export default async function HomePage() {
             >
               <MediaPlaceholder kind="unidade" icon="mapPin" className="h-36 w-full" />
               <div className="p-5">
-                <p className="text-xs font-medium uppercase tracking-wide text-forest-500">
+                <p className="text-xs font-medium uppercase tracking-wide text-accent">
                   {unidade.tipo}
                 </p>
-                <h3 className="font-display mt-1 text-lg font-semibold text-forest-900">
+                <h3 className="font-display mt-1 text-lg font-semibold text-heading">
                   {unidade.nome}
                 </h3>
                 <p className="mt-2 line-clamp-3 text-sm text-foreground/65">
@@ -111,12 +111,12 @@ export default async function HomePage() {
       <section className="bg-surface-muted">
         <div className="mx-auto max-w-6xl px-5 py-14 md:px-6">
           <div className="flex items-center justify-between">
-            <h2 className="font-display text-2xl font-semibold text-forest-900 md:text-3xl">
+            <h2 className="font-display text-2xl font-semibold text-heading md:text-3xl">
               Trilhas em destaque
             </h2>
             <Link
               href="/trilhas"
-              className="hidden items-center gap-1 text-sm font-medium text-forest-600 hover:text-forest-700 md:inline-flex"
+              className="hidden items-center gap-1 text-sm font-medium text-accent-strong hover:text-accent-strong md:inline-flex"
             >
               Ver todas <Icon name="chevronRight" size={16} />
             </Link>
@@ -130,7 +130,7 @@ export default async function HomePage() {
 
           <Link
             href="/trilhas"
-            className="mt-8 flex items-center justify-center gap-1 text-sm font-medium text-forest-600 md:hidden"
+            className="mt-8 flex items-center justify-center gap-1 text-sm font-medium text-accent-strong md:hidden"
           >
             Ver todas as trilhas <Icon name="chevronRight" size={16} />
           </Link>
@@ -138,7 +138,7 @@ export default async function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-6">
-        <h2 className="font-display text-2xl font-semibold text-forest-900 md:text-3xl">
+        <h2 className="font-display text-2xl font-semibold text-heading md:text-3xl">
           Próximos eventos e temporadas
         </h2>
 
@@ -153,14 +153,14 @@ export default async function HomePage() {
             >
               <div>
                 <div className="flex items-center gap-2">
-                  <h3 className="font-display text-base font-semibold text-forest-900">
+                  <h3 className="font-display text-base font-semibold text-heading">
                     {evento.titulo}
                   </h3>
                   <StatusEventoBadge value={evento.status} />
                 </div>
                 <p className="mt-1 text-sm text-foreground/65">{evento.descricao}</p>
               </div>
-              <div className="flex shrink-0 items-center gap-2 text-sm font-medium text-forest-600">
+              <div className="flex shrink-0 items-center gap-2 text-sm font-medium text-accent-strong">
                 <Icon name="calendar" size={16} />
                 {formatPeriodoEvento(evento.data_inicio, evento.data_fim)}
               </div>

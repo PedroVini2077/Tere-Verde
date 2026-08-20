@@ -23,7 +23,7 @@ export default async function BiodiversidadePage() {
 
       <div className="mx-auto max-w-6xl space-y-12 px-5 py-10 md:px-6">
         <section>
-          <h2 className="font-display text-xl font-semibold text-forest-900">Fauna</h2>
+          <h2 className="font-display text-xl font-semibold text-heading">Fauna</h2>
           {fauna.length === 0 ? (
             <p className="mt-3 text-foreground/60">Nenhuma espécie cadastrada ainda.</p>
           ) : (
@@ -36,7 +36,7 @@ export default async function BiodiversidadePage() {
         </section>
 
         <section>
-          <h2 className="font-display text-xl font-semibold text-forest-900">Flora</h2>
+          <h2 className="font-display text-xl font-semibold text-heading">Flora</h2>
           {flora.length === 0 ? (
             <p className="mt-3 text-foreground/60">Nenhuma espécie cadastrada ainda.</p>
           ) : (

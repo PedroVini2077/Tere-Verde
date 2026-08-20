@@ -13,7 +13,7 @@ export function EspecieCard({ especie }: { especie: Especie }) {
       <div className="p-5">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <h3 className="font-display text-lg font-semibold text-forest-900">
+            <h3 className="font-display text-lg font-semibold text-heading">
               {especie.nome_popular}
             </h3>
             {especie.nome_cientifico && (

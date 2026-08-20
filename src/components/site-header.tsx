@@ -19,7 +19,7 @@ export default async function SiteHeader() {
               <path d="M31 33L37 24L47 40H27Z" fill="#63A37B" />
             </svg>
           </span>
-          <span className="font-display text-lg font-semibold leading-none text-forest-900">
+          <span className="font-display text-lg font-semibold leading-none text-heading">
             Terê Verde
           </span>
         </Link>
@@ -29,7 +29,7 @@ export default async function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-4 py-2 text-sm font-medium text-foreground/70 transition-colors hover:bg-forest-50 hover:text-forest-700"
+              className="rounded-full px-4 py-2 text-sm font-medium text-foreground/70 transition-colors hover:bg-tint hover:text-accent-strong"
             >
               {link.label}
             </Link>

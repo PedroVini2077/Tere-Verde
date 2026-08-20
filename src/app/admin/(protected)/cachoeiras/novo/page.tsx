@@ -11,7 +11,7 @@ export default async function NovaCachoeiraPage() {
 
   return (
     <div>
-      <h1 className="font-display text-2xl font-semibold text-forest-900">Nova cachoeira</h1>
+      <h1 className="font-display text-2xl font-semibold text-heading">Nova cachoeira</h1>
       <div className="mt-6 max-w-2xl">
         <CachoeiraForm unidades={unidades} />
       </div>

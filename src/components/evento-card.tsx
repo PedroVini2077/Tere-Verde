@@ -8,11 +8,11 @@ export function EventoCard({ evento }: { evento: Evento }) {
     <div className="rounded-2xl border border-border bg-surface p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
-          <p className="text-xs font-medium uppercase tracking-wide text-forest-500">
+          <p className="text-xs font-medium uppercase tracking-wide text-accent">
             {evento.tipo === "temporada" ? "Temporada" : "Evento"}
             {evento.unidades_conservacao ? ` · ${evento.unidades_conservacao.nome}` : ""}
           </p>
-          <h3 className="font-display mt-0.5 text-lg font-semibold text-forest-900">
+          <h3 className="font-display mt-0.5 text-lg font-semibold text-heading">
             {evento.titulo}
           </h3>
         </div>
