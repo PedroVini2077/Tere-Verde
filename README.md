@@ -11,9 +11,11 @@ Três Picos e Parque Natural Municipal Montanhas de Teresópolis.
 
 ## Equipe
 
-| Nome | Papel |
-|------|-------|
-| _preencher_ | _preencher_ |
+Trabalho individual.
+
+| Nome |
+|------|
+| Pedro Vinícios |
 
 ## Situação-problema escolhida
 
@@ -80,6 +82,22 @@ npm run dev
 ```
 
 Acesse `http://localhost:3000`.
+
+### Desenvolvendo pelo Termux (Android)
+
+```bash
+pkg update && pkg install git nodejs-lts
+git clone https://github.com/PedroVini2077/Tere-Verde.git
+cd Tere-Verde
+git checkout claude/college-mvp-project-w7b89x
+npm install
+cp .env.example .env.local   # preencha com as credenciais do Supabase
+npm run dev -- --hostname 0.0.0.0
+```
+
+Abra `http://localhost:3000` no navegador do celular. O deploy em
+produção roda na Vercel (veja abaixo), então rodar localmente no Termux
+só é necessário durante o desenvolvimento.
 
 Para recriar o banco de dados em um novo projeto Supabase, veja
 [`data/README.md`](data/README.md).
